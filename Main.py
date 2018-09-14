@@ -54,10 +54,10 @@ def main():
     start_path = './'  # current directory
     print("This is lab 1, the lists are as follow:")
     process_dir(start_path)
-    # print("***********************************Cat List***********************************")
-    # print(cat_list)
-    # print("***********************************Dog List***********************************")
-    # print(dog_list)
+    print("***********************************Cat List***********************************")
+    print(cat_list)
+    print("***********************************Dog List***********************************")
+    print(dog_list)
 
 
 main()
