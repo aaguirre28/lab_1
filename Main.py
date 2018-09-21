@@ -1,7 +1,7 @@
 import os
 import random
 
-cat_list = []  # global variable for cat_list
+cat_list = []  # global variable for cat_list       # Aguirre, Alexis: I like the cleanliness and organization, makes code easy to read through.
 dog_list = []  # global variable for dog_list
 
 
@@ -32,7 +32,7 @@ def process_dir(path):
     cat_list, dog_list = classify_files(file_list)
 
     for item in dir_list:
-        #print(item) #DEBUG
+        #print(item) #DEBUG         #Aguirre, Alexis: I personally like print statements to debug code, it gives me a better view of where issues are.
         process_dir(path + "/" + item)
 
     return cat_list, dog_list
@@ -42,8 +42,8 @@ def classify_files(list_of_pictures):
     # decide where to put the image
     for item in list_of_pictures:
         evaluation = classify_pic(item)
-        if evaluation > .5:  # if it's greater than .5, append to dog_list
-            dog_list.append(item)
+        if evaluation > .5:  # if it's greater than .5, append to dog_list          #Aguirre, Alexis: These comments seem self explanatory on code.
+            dog_list.append(item)                                                   #Not an issue now, but can get crowded with more larger code files.
         else:
             cat_list.append(item)  # if it's less than .5, append to cat_list
 
